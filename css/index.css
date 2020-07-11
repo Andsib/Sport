@@ -74,7 +74,6 @@ body {
   height: 35px;
   transition: all 5s;
 }
-
 .logo:hover {
   transform: rotateX(720deg);
 }
@@ -128,7 +127,6 @@ body {
   letter-spacing: 0.7px;
   transition: all 0.3s;
 }
-
 .menu_link:hover {
   text-decoration: underline;
   color: white;
@@ -251,6 +249,9 @@ body {
   margin-left: auto;
   transition: all 0.3s;
 }
+.athlets_article_list .athlets_article_link:hover {
+  color: black;
+}
 .athlets_article_list .athlets_article_link .athlets_article_number {
   font-family: "ProxB";
   font-size: 18px;
@@ -268,9 +269,6 @@ body {
   height: 5px;
   background-color: #5e42b0;
   border-radius: 2px;
-}
-.athlets_article_list .athlets_article_link:hover {
-  color: black;
 }
 .athlets_article_list .athlets_article_text {
   font-family: "ProxRg";
@@ -296,7 +294,6 @@ body {
   background-color: #c1c1c1;
   transition: all 0.3s;
 }
-
 .circle:hover {
   background-color: #9173e6;
 }
@@ -446,7 +443,6 @@ body {
   top: 230px;
   transition: all 0.3s;
 }
-
 .number_box:hover {
   background-color: black;
 }
@@ -624,7 +620,6 @@ body {
   color: white;
   transition: all 0.3s;
 }
-
 .social_link:hover {
   color: #9173e6;
 }
@@ -634,6 +629,15 @@ body {
   font-size: 20px;
   color: white;
   letter-spacing: 1px;
+  text-decoration: none;
+}
+
+.address_link {
+  text-decoration: none;
+  color: white;
+}
+.address_link:hover {
+  text-decoration: underline;
 }
 
 @media screen and (max-width: 1145px) {
