@@ -1,0 +1,315 @@
+@media screen and (max-width: 767px) {
+    // header
+    .container {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .header {
+        padding-bottom: 20px;
+    }
+    .for {
+        display: none;
+    }
+    .heading {
+        justify-content: center;
+        .logo {
+            width: 140px;
+            height: 25px;
+        }
+    }
+    .titles {
+        margin-top: 140px;
+        flex-direction: column;
+        align-content: center;
+        .title {
+            font-size: 30px;
+            letter-spacing: 1px;
+        }
+        .title:nth-child(2) {
+            margin-left: 50px;
+        }
+    }
+    .titles::after {
+        left: 45%;
+        width: 5px;
+        height: 250px;
+        top: -80px;
+    }
+    .order {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .nav {
+        margin-top: 35px;
+        width: 100%;
+        order: 1;
+        .menu {
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+        }
+    }
+    .menu_link {
+        font-size: 12px;
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-top: 10px;
+    }
+    .buttons{
+        margin-top: 115px;
+        width: 290px;
+    }
+    .button_link {
+        width: 140px;
+        height: 40px;
+        letter-spacing: 0.4px;
+        .fa {
+            font-size: 20px;
+            margin-right: 10px;
+            text-align: center;
+        }
+        .button_text {
+            font-size: 8px;
+            margin-right: 0;
+        }
+    }
+    // athlets
+    .title_second {
+        font-size: 50px;
+        width: auto;
+        margin: 0;
+        margin-left: 5%;
+    }
+    .athlets_box {
+        display: flex;
+        padding-top: 25px;
+        flex-direction: column;
+    }
+    .footballer {
+        width: 300px;
+        display: flex;
+        justify-content: center;
+        order: 2;
+        margin-left: auto;
+        margin-right: auto;
+        position: relative;
+    }
+    .footballer::before {
+        top: 15px;
+        left: 74px;
+        right: 0;
+    }
+    .cross2 {
+        top: 8px;
+        left: 52px;
+    }
+    .title_second {
+        order: 1;
+        margin-bottom: 0;
+    }
+    .footballer {
+        height: 200px;
+    }
+    .footballer_picture {
+        width: 190px;
+        height: 270px;
+        top: 0;
+        position: static;
+    }
+    .athlets_article {
+        order: 3;
+    }
+    .footballer::after {
+        width: 3px;
+        height: 250px;
+        top: -25px;
+        right: auto;
+        left: auto;
+    }
+    .athlets_article_list {
+        justify-content: center;
+        width: 100%;
+        padding-top: 60px;
+        padding-bottom: 25px;
+    }
+    .athlets_article_list .athlets_article_link {
+        font-size: 28px;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        width: 100%;
+        justify-content: center;
+
+    }
+    .athlets_article_list .athlets_article_number {
+        font-style: 14px;
+    }
+    .athlets_article_list .athlets_article_text {
+        font-size: 15px;
+        line-height: 18px;
+        letter-spacing: 1px;
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        padding: 0px 15px;
+    }
+    .athlets_article_list:first-child, .athlets_article_list:last-child {
+        display: none;
+    }
+    .circles {
+        display: flex;
+        margin: 30px auto 0px auto;
+    }
+    // basketball player
+    .basketballPlayer {
+        display: flex;
+        flex-direction: column;
+    }
+    .athlets_article_list_container {
+        margin: 0;
+    }
+    .title_second__left {
+        margin-left: 0;
+    }
+    .basketballer {
+        width: 300px;
+        height: 200px;
+        display: flex;
+        justify-content: center;
+        order: 1;
+
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .basketballer_picture {
+        width: 302px;
+        height: 248px;
+        top:0;
+        left: 0;
+        position: relative;
+        background-size: 100%;
+    }
+    .basketballer::before {
+        top: 20px;
+        left: 70px;
+    }
+    .cross2_player {
+        top: 10px;
+        left: 50px;
+    }
+    .cross3_player {
+        display: none;
+    }
+    .basketballer::after {
+        top: 5px;
+        left: 230px;
+        height: 130px;
+        width: 3px;
+    }
+    .basketballer_line__bottom {
+        width: 3px;
+        height: 200px;
+        top: 60px;
+        left: 100px;
+    }
+    .athlets_article_list__player:nth-child(2) {
+        display: none;
+    }
+    .athlets_article_list__player:last-child {
+        display: block;
+        background-color: $light-grey;
+        .athlets_article_text__player {
+            padding: 0;
+            display: flex;
+            justify-content: flex-start;
+            color: black;
+            width: 280px;
+        }
+        .athlets_article_link {
+            display: flex;
+            justify-content: flex-start;
+            color: $grey;
+        }
+        .athlets_article_number {
+            color: black;
+        }
+        .athlets_article_number:after {
+            background-color: $dark-purple;
+        }
+    }
+    // cards
+    .card_picture {
+        height: 351px;
+        background-position: center;
+    }
+    .card_description {
+        padding: 35px 40px 50px 15px;
+    }
+    .card_description_title {
+        font-size: 28px;
+    }
+    .card_description_text {
+        font-size: 16px;
+    }
+    .card_description_text__first{
+        padding-right: 40px;
+    }
+    .number_box {
+        width: 70px;
+        height: 70px;
+        left: 15px;
+        top: -60px;
+        justify-content: center;
+        align-items: center;
+    }
+    .number {
+        font-size: 14px;
+    }
+    // footer
+    .footer_container {
+        padding-top: 95px;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+    .titles_box {
+        width: 295px;
+        .title {
+            font-size: 34px;
+            letter-spacing: 1.7px;
+            margin: 0;
+        }
+    }
+    .logo2 {
+        width: 73px;
+        height: 78px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        margin-bottom: 55px;
+    }
+    .subtitle {
+        font-size: 15px;
+        letter-spacing: 0.75px;
+        margin-top: 10px;
+        text-align: start;
+        letter-spacing: 0.5px;
+    }
+    .titles_box::before {
+        width: 4px;
+        height: 100px;
+        left: 35px;
+        top: 110px;
+    }
+    .titles_box::after {
+        width: 4px;
+        height: 200px;
+        right: 105px;
+        top: 65px;
+    }
+    .last {
+        margin-top: 125px;
+    }
+    .last_box {
+        min-height: 50px;
+    }
+    .social {
+        font-size: 20px;
+    }
+}

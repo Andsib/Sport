@@ -1,0 +1,123 @@
+.athlets_box {
+    padding-top: 50px;
+}
+.footballer {
+    width: 50%;
+    margin-right: auto;
+    position: relative;
+}
+.footballer::before {
+    content: url('../images/cross.png');
+    position: absolute;
+    top: 130px;
+    right: 600px;
+}
+.footballer::after {
+    content:'';
+    width: 6px;
+    height: 1100px;
+    background-color: $purple;
+    position: absolute;
+    transform: rotate(40deg);
+    right: 470px;
+    top: -120px;
+    z-index: 1;
+}
+.footballer_picture {
+    position: absolute;
+    width: 725px;
+    height: 1105px;
+    right: 0;
+    z-index: 2;
+}
+.cross2 {
+    background-image: url('../images/cross-2.png');
+    width: 16px;
+    height: 15px;
+    position: absolute;
+    top: 120px;
+    right: 620px;
+}
+.athlets_article {
+    display: flex;
+    flex-direction: column;
+}
+.title_second {
+    @include fonts ($ProxB, 90px, $light-grey);
+    text-transform: uppercase;
+    width: 50%;
+    margin-left: auto;
+}
+.athlets_article_menu {
+    padding: 0;
+}
+.athlets_article_list {
+    list-style: none;
+    width: 100%;
+    padding-top: 60px;
+    padding-bottom: 50px;
+    .athlets_article_link {
+        text-decoration: none;
+        @include fonts ($ProxB, 36px, $grey);
+        text-transform: uppercase;
+        letter-spacing: 1.8px;
+        width: 50%;
+        display: flex;
+        margin-left: auto;
+        transition: all 0.3s;
+        &:hover {
+            color: black;
+        }
+        .athlets_article_number{
+            @include fonts ($ProxB, 18px, black);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            display:flex;
+            flex-direction: column;
+            margin-top: 5px;
+            margin-right: 10px;
+        }
+        .athlets_article_number::after {
+            content:'';
+            width: 20px;
+            height: 5px;
+            background-color: $dark-purple;
+            border-radius: 2px;
+        }
+    }
+    .athlets_article_text {
+        @include fonts ($ProxRg, 20px, black);
+        line-height: 28px;
+        letter-spacing: 1px;
+        max-width: 690px;
+        margin-left: 50%;
+    }
+}
+.circles {
+    display: flex;
+    justify-content: space-between;
+    width: 55px;
+    display: none;
+}
+.circle {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: $grey;
+    transition: all 0.3s;
+    &:hover {
+        background-color: $purple;
+    }
+}
+.athlets_article_list:nth-child(2) {
+    background-color: $light-grey;
+}
+.athlets_article_list:last-child {
+    background-color: $dark-purple;
+}
+.athlets_article_list:last-child .athlets_article_number {
+    color: $dark-blue;
+}
+.athlets_article_list:last-child .athlets_article_number::after {
+    background-color: $light-grey;
+}

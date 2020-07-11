@@ -1,0 +1,105 @@
+.footer {
+    background-color: $dark-blue;
+    background-image: url('../images/stadium.png');
+    background-size: cover;
+}
+.footer_container {
+    padding-top: 225px;
+    max-width: 1840px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.titles_box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 920px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+}
+.titles_box .title {
+    z-index: 2;
+}
+.titles_box::before {
+    content: '';
+    width: 5px;
+    height: 230px;
+    background-color: $purple;
+    transform: rotate(38deg);
+    position: absolute;
+    left: 235px;
+    top: -40px;
+    z-index: 1;
+}
+.titles_box::after {
+    content: '';
+    width: 5px;
+    height: 400px;
+    background-color: $purple;
+    transform: rotate(38deg);
+    position: absolute;
+    right: 255px;
+    top: -135px;
+}
+.logo2  {
+    background-image: url('../images/logo2.png');
+    width: 130px;
+    height: 137px;
+    display: block;
+}
+.subtitle {
+    content: 'Show everyone what you can do!';
+    @include fonts ($ProxB, 36px, $purple);
+    text-transform: uppercase;
+    margin: 0;
+    padding-left: 40px;
+    line-height: 0px;
+    z-index: 2;
+}
+.last {
+    margin-top: 195px;
+    background-color: rgba(10, 14, 52, 0.6);
+}
+.last_box {
+    display: flex;
+    min-height: 170px;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1840px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    .logo {
+        width: 172px;
+        height: 30px;
+    }
+}
+.social {
+    width: 130px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 24px;
+}
+.social_link {
+    color:white;
+    transition: all 0.3s;
+    &:hover {
+        color: $purple;
+    }
+}
+.address {
+    @include fonts ($ProxRg, 20px, white);
+    letter-spacing: 1px;
+    text-decoration: none;
+}
+.address_link {
+    text-decoration: none;
+    color: white;
+    &:hover {
+        text-decoration: underline;
+    }
+}
